@@ -230,58 +230,49 @@ Return a JSON object with exactly these fields:
 }}"""
 
 
+async def _call_haiku(client: anthropic.AsyncAnthropic, dialogue: str) -> dict:
+    """Single Haiku API call. Returns parsed JSON or raises."""
+    resp = await client.messages.create(
+        model=config.MODEL,
+        max_tokens=config.MAX_TOKENS,
+        system=EVAL_SYSTEM_PROMPT,
+        messages=[{
+            "role": "user",
+            "content": EVAL_USER_PROMPT.format(dialogue=dialogue),
+        }],
+    )
+    text = resp.content[0].text.strip()
+    text = re.sub(r"^```(?:json)?\s*", "", text)
+    text = re.sub(r"\s*```$", "", text)
+    return json.loads(text)
+
+
 async def evaluate_transcript(
     client: anthropic.AsyncAnthropic,
     dialogue: str,
     semaphore: asyncio.Semaphore,
 ) -> dict | None:
-    """Send one transcript to Haiku and parse the JSON response."""
-    # Truncate very long transcripts to stay within token budget
+    """Send one transcript to Haiku with exponential backoff retries."""
     if len(dialogue) > 12000:
         dialogue = dialogue[:12000] + "\n[... transcript truncated ...]"
 
+    max_retries = 4
     async with semaphore:
-        try:
-            resp = await client.messages.create(
-                model=config.MODEL,
-                max_tokens=config.MAX_TOKENS,
-                system=EVAL_SYSTEM_PROMPT,
-                messages=[{
-                    "role": "user",
-                    "content": EVAL_USER_PROMPT.format(dialogue=dialogue),
-                }],
-            )
-            text = resp.content[0].text.strip()
-            # Strip markdown fences if present
-            text = re.sub(r"^```(?:json)?\s*", "", text)
-            text = re.sub(r"\s*```$", "", text)
-            return json.loads(text)
-        except json.JSONDecodeError as e:
-            log.warning(f"  JSON parse error: {e}")
-            return None
-        except anthropic.RateLimitError:
-            log.warning("  Rate limited — waiting 15s and retrying...")
-            await asyncio.sleep(15)
+        for attempt in range(max_retries):
             try:
-                resp = await client.messages.create(
-                    model=config.MODEL,
-                    max_tokens=config.MAX_TOKENS,
-                    system=EVAL_SYSTEM_PROMPT,
-                    messages=[{
-                        "role": "user",
-                        "content": EVAL_USER_PROMPT.format(dialogue=dialogue),
-                    }],
-                )
-                text = resp.content[0].text.strip()
-                text = re.sub(r"^```(?:json)?\s*", "", text)
-                text = re.sub(r"\s*```$", "", text)
-                return json.loads(text)
-            except Exception:
-                log.warning("  Retry also failed")
+                return await _call_haiku(client, dialogue)
+            except json.JSONDecodeError as e:
+                log.warning(f"  JSON parse error: {e}")
                 return None
-        except Exception as e:
-            log.warning(f"  API error: {e}")
-            return None
+            except anthropic.RateLimitError:
+                wait = 10 * (2 ** attempt)  # 10s, 20s, 40s, 80s
+                log.warning(f"  Rate limited — attempt {attempt+1}/{max_retries}, waiting {wait}s...")
+                await asyncio.sleep(wait)
+            except Exception as e:
+                log.warning(f"  API error: {e}")
+                return None
+        log.warning("  Max retries exhausted")
+        return None
 
 
 async def evaluate_dvm(
