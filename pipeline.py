@@ -680,6 +680,12 @@ def main():
     dvms.sort(key=lambda d: d["n"])
     log.info(f"  {len(dvms)} DVMs in final dashboard")
 
+    # Safety check: don't overwrite dashboard with empty results
+    if not dvms:
+        log.error("  NO DVMs produced results — skipping dashboard update to protect existing data.")
+        log.error("  Check API key credits and rate limits.")
+        sys.exit(1)
+
     causes = compute_cause_distributions(eval_results)
     profiles = compute_profile_distributions(dvms)
 
