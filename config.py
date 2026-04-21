@@ -25,9 +25,10 @@ MODEL             = "claude-haiku-4-5-20251001"    # fast + cheap
 MAX_TOKENS        = 1024                           # response cap per call
 
 # ── Evaluation settings ─────────────────────────────────────────────
-SAMPLE_SIZE       = 30          # transcripts to evaluate per DVM (0 = all)
+SAMPLE_SIZE       = 0           # transcripts to evaluate per DVM (0 = all)
 MIN_TRANSCRIPT_LINES = 4       # skip very short transcripts
-MAX_CONCURRENT    = 5           # parallel Haiku calls (keep ≤10 to stay under rate limits)
+MAX_CONCURRENT    = 8           # parallel Haiku calls (keep ≤10 to stay under rate limits)
+FILTER_YEAR       = 2026        # only process transcripts from this year (0 = no filter)
 
 # ── Paths ────────────────────────────────────────────────────────────
 WORK_DIR          = "/tmp/vetcor_pipeline"         # temp workspace (transcripts, zips)
