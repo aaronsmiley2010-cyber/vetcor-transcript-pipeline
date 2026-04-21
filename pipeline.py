@@ -31,7 +31,7 @@ import anthropic
 
 import config
 
-# ââ Logging ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ── Logging ──────────────────────────────────────────────────────────
 
 logging.basicConfig(
     level=logging.INFO,
@@ -41,9 +41,9 @@ logging.basicConfig(
 log = logging.getLogger("pipeline")
 
 
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-#  STEP 1 â Download & extract transcripts from S3
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ═══════════════════════════════════════════════════════════════════════
+#  STEP 1 — Download & extract transcripts from S3
+# ═══════════════════════════════════════════════════════════════════════
 
 def get_s3_client():
     return boto3.client(
@@ -95,15 +95,15 @@ def download_and_extract(s3) -> dict[str, Path]:
             zf.extractall(dest)
 
         txt_count = sum(1 for _ in dest.rglob("*.txt"))
-        log.info(f"  Extracted {txt_count} transcripts â {dvm_key}")
+        log.info(f"  Extracted {txt_count} transcripts → {dvm_key}")
         dvm_dirs[dvm_key] = dest
 
     return dvm_dirs
 
 
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-#  STEP 2 â Parse transcript files
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ═══════════════════════════════════════════════════════════════════════
+#  STEP 2 — Parse transcript files
+# ═══════════════════════════════════════════════════════════════════════
 
 def parse_transcript(path: Path) -> dict | None:
     """
@@ -152,6 +152,24 @@ def load_dvm_transcripts(dvm_dirs: dict[str, Path]) -> dict[str, list[dict]]:
     return result
 
 
+def filter_by_year(all_transcripts: dict[str, list[dict]]) -> dict[str, list[dict]]:
+    """Filter transcripts to only those created in FILTER_YEAR."""
+    if not getattr(config, "FILTER_YEAR", 0):
+        return all_transcripts
+
+    year_str = str(config.FILTER_YEAR)
+    filtered = {}
+    for dvm_key, txs in all_transcripts.items():
+        kept = [
+            tx for tx in txs
+            if tx.get("metadata", {}).get("created", "").startswith(year_str)
+        ]
+        if kept:
+            filtered[dvm_key] = kept
+        log.info(f"  {dvm_key}: {len(kept)}/{len(txs)} transcripts from {year_str}")
+    return filtered
+
+
 def sample_transcripts(all_transcripts: dict[str, list[dict]]) -> dict[str, list[dict]]:
     """Sample N transcripts per DVM if SAMPLE_SIZE > 0."""
     if config.SAMPLE_SIZE <= 0:
@@ -167,15 +185,15 @@ def sample_transcripts(all_transcripts: dict[str, list[dict]]) -> dict[str, list
     return sampled
 
 
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-#  STEP 3 â Claude Haiku evaluation
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ═══════════════════════════════════════════════════════════════════════
+#  STEP 3 — Claude Haiku evaluation
+# ═══════════════════════════════════════════════════════════════════════
 
 EVAL_SYSTEM_PROMPT = """You are VetCor's clinical transcript evaluator. You analyze veterinary appointment transcripts and extract structured signals about clinical behavior.
 
 Speaker 0 is ALWAYS the veterinarian (DVM). Other speakers are pet owners or staff.
 
-For each transcript, evaluate these four clinical domains and return a JSON object. Be conservative â only mark something as TRUE if there is clear evidence in the dialogue.
+For each transcript, evaluate these four clinical domains and return a JSON object. Be conservative — only mark something as TRUE if there is clear evidence in the dialogue.
 
 Return ONLY valid JSON, no markdown fences, no explanation."""
 
@@ -242,9 +260,25 @@ async def evaluate_transcript(
             log.warning(f"  JSON parse error: {e}")
             return None
         except anthropic.RateLimitError:
-            log.warning("  Rate limited â waiting 10s...")
-            await asyncio.sleep(10)
-            return None
+            log.warning("  Rate limited — waiting 15s and retrying...")
+            await asyncio.sleep(15)
+            try:
+                resp = await client.messages.create(
+                    model=config.MODEL,
+                    max_tokens=config.MAX_TOKENS,
+                    system=EVAL_SYSTEM_PROMPT,
+                    messages=[{
+                        "role": "user",
+                        "content": EVAL_USER_PROMPT.format(dialogue=dialogue),
+                    }],
+                )
+                text = resp.content[0].text.strip()
+                text = re.sub(r"^```(?:json)?\s*", "", text)
+                text = re.sub(r"\s*```$", "", text)
+                return json.loads(text)
+            except Exception:
+                log.warning("  Retry also failed")
+                return None
         except Exception as e:
             log.warning(f"  API error: {e}")
             return None
@@ -281,12 +315,12 @@ async def evaluate_all(sampled: dict[str, list[dict]]) -> dict[str, list[dict]]:
     return results
 
 
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-#  STEP 4 â Aggregate into dashboard data
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ═══════════════════════════════════════════════════════════════════════
+#  STEP 4 — Aggregate into dashboard data
+# ═══════════════════════════════════════════════════════════════════════
 
 def parse_dvm_name(dvm_key: str) -> str:
-    """Convert '225-321-wynnpalmer' â 'Dr. Wynn Palmer'"""
+    """Convert '225-321-wynnpalmer' → 'Dr. Wynn Palmer'"""
     parts = dvm_key.split("-", 2)
     if len(parts) < 3:
         return dvm_key
@@ -299,7 +333,7 @@ def parse_dvm_name(dvm_key: str) -> str:
     for i in range(2, len(name) - 1):
         if name[i:].capitalize() == name[i:]:
             continue
-    # Fallback: use a simple heuristic â find the split point
+    # Fallback: use a simple heuristic — find the split point
     # where the first name ends. Try lengths 3-8 for first name.
     best_split = len(name) // 2
     common_first = [
@@ -350,7 +384,7 @@ def aggregate_dvm(dvm_key: str, evals: list[dict], total_transcripts: int) -> di
 
     n = len(evals)
 
-    # ââ Lab ââ
+    # ── Lab ──
     lab_recommended = sum(1 for e in evals if e.get("lab", {}).get("recommended"))
     lab_completed   = sum(1 for e in evals if e.get("lab", {}).get("completed"))
     lab_hedging     = sum(1 for e in evals if e.get("lab", {}).get("hedging"))
@@ -369,7 +403,7 @@ def aggregate_dvm(dvm_key: str, evals: list[dict], total_transcripts: int) -> di
     else:
         lp = "moderate"
 
-    # ââ Dental ââ
+    # ── Dental ──
     dental_mentioned   = sum(1 for e in evals if e.get("dental", {}).get("mentioned"))
     dental_recommended = sum(1 for e in evals if e.get("dental", {}).get("recommended"))
     dental_graded      = sum(1 for e in evals if e.get("dental", {}).get("graded"))
@@ -386,7 +420,7 @@ def aggregate_dvm(dvm_key: str, evals: list[dict], total_transcripts: int) -> di
     else:
         dp = "recommender"
 
-    # ââ Prevention ââ
+    # ── Prevention ──
     prev_discussed   = sum(1 for e in evals if e.get("prevention", {}).get("discussed"))
     prev_recommended = sum(1 for e in evals if e.get("prevention", {}).get("recommended"))
     prev_dispensed   = sum(1 for e in evals if e.get("prevention", {}).get("dispensed"))
@@ -403,7 +437,7 @@ def aggregate_dvm(dvm_key: str, evals: list[dict], total_transcripts: int) -> di
     else:
         pp = "reactive"
 
-    # ââ Forward Booking ââ
+    # ── Forward Booking ──
     fwd_definite = sum(1 for e in evals if e.get("forward_booking", {}).get("type") == "definite")
     fwd_vague    = sum(1 for e in evals if e.get("forward_booking", {}).get("type") == "vague")
     fwd_none     = sum(1 for e in evals if e.get("forward_booking", {}).get("type") == "none")
@@ -447,7 +481,7 @@ def compute_cause_distributions(all_evals: dict[str, list[dict]]) -> dict:
 
     n = len(flat) or 1
 
-    # Lab causes â derive from signal patterns
+    # Lab causes — derive from signal patterns
     lab_rec = sum(1 for e in flat if e.get("lab", {}).get("recommended"))
     lab_hedge = sum(1 for e in flat if e.get("lab", {}).get("hedging"))
     lab_comp = sum(1 for e in flat if e.get("lab", {}).get("completed"))
@@ -526,9 +560,9 @@ def compute_profile_distributions(dvms: list[dict]) -> dict:
     }
 
 
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-#  STEP 5 â Inject data into CVO Dashboard template
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ═══════════════════════════════════════════════════════════════════════
+#  STEP 5 — Inject data into CVO Dashboard template
+# ═══════════════════════════════════════════════════════════════════════
 
 def inject_dashboard(dvms: list[dict], causes: dict, profiles: dict) -> str:
     """
@@ -552,7 +586,7 @@ def inject_dashboard(dvms: list[dict], causes: dict, profiles: dict) -> str:
     dvms_json = json.dumps(dvms)
     html = re.sub(r"const DVMS = \[.*?\];", f"const DVMS = {dvms_json};", html, flags=re.DOTALL)
 
-    # Replace REGIONS (empty â we removed regions)
+    # Replace REGIONS (empty — we removed regions)
     html = re.sub(r"const REGIONS = \{.*?\};", "const REGIONS = {};", html)
 
     # Replace cause constants
@@ -586,9 +620,9 @@ def inject_dashboard(dvms: list[dict], causes: dict, profiles: dict) -> str:
     return html
 
 
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ═══════════════════════════════════════════════════════════════════════
 #  MAIN
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ═══════════════════════════════════════════════════════════════════════
 
 def main():
     parser = argparse.ArgumentParser(description="VetCor Transcript Evaluation Pipeline")
@@ -616,9 +650,14 @@ def main():
     log.info("\n[2/5] Parsing transcripts...")
     all_transcripts = load_dvm_transcripts(dvm_dirs)
 
+    # Filter by year if configured
+    if getattr(config, "FILTER_YEAR", 0):
+        log.info(f"\n[2b/5] Filtering to {config.FILTER_YEAR} transcripts...")
+        all_transcripts = filter_by_year(all_transcripts)
+
     # Filter out DVMs with too few transcripts
     all_transcripts = {k: v for k, v in all_transcripts.items() if len(v) >= 5}
-    log.info(f"  {len(all_transcripts)} DVMs with â¥5 valid transcripts")
+    log.info(f"  {len(all_transcripts)} DVMs with ≥5 valid transcripts")
 
     # Step 3: Sample
     log.info("\n[3/5] Sampling transcripts...")
