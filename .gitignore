@@ -1,0 +1,8 @@
+# Never commit credentials
+.env
+*.env
+
+# Cached transcripts (downloaded fresh each run)
+/tmp/
+__pycache__/
+*.pyc
