@@ -496,6 +496,50 @@ tbody tr:nth-child(even):hover { background: #f0f2f5; }
 </style>
 </head>
 <body>
+<!-- PASSWORD GATE -->
+<div id="pw-overlay" style="position:fixed;inset:0;z-index:99999;background:#0f172a;display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;">
+  <div style="background:#1e293b;border-radius:12px;padding:40px;width:360px;box-shadow:0 20px 60px rgba(0,0,0,0.5);text-align:center;">
+    <div style="margin-bottom:24px;">
+      <div style="width:56px;height:56px;background:#3b82f6;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;margin-bottom:16px;">
+        <svg width="28" height="28" fill="white" viewBox="0 0 24 24"><path d="M12 2C9.24 2 7 4.24 7 7v2H6c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-9c0-1.1-.9-2-2-2h-1V7c0-2.76-2.24-5-5-5zm0 2c1.66 0 3 1.34 3 3v2H9V7c0-1.66 1.34-3 3-3zm0 9c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/></svg>
+      </div>
+      <h2 style="color:#f1f5f9;margin:0 0 4px;font-size:20px;font-weight:600;">VetCor Intelligence</h2>
+      <p style="color:#94a3b8;margin:0;font-size:13px;">CVO PERF Dashboard — Restricted Access</p>
+    </div>
+    <input id="pw-input" type="password" placeholder="Enter access password"
+      style="width:100%;box-sizing:border-box;padding:12px 16px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#f1f5f9;font-size:15px;outline:none;margin-bottom:12px;"
+      onkeydown="if(event.key==='Enter')checkPw()">
+    <p id="pw-error" style="color:#f87171;font-size:13px;margin:0 0 12px;display:none;">Incorrect password. Please try again.</p>
+    <button onclick="checkPw()"
+      style="width:100%;padding:12px;background:#3b82f6;color:white;border:none;border-radius:8px;font-size:15px;font-weight:500;cursor:pointer;">
+      Access Dashboard
+    </button>
+  </div>
+</div>
+<script>
+(function(){
+  const HASH = '8ba4dfa0d6845c37e1345f97fab1336ee7e0b5130213250b04b82848dc124240';
+  const KEY = 'vetcor_auth';
+  if (sessionStorage.getItem(KEY) === HASH) {
+    document.getElementById('pw-overlay').style.display = 'none';
+  }
+  window.checkPw = async function() {
+    const val = document.getElementById('pw-input').value;
+    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(val));
+    const hex = Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+    if (hex === HASH) {
+      sessionStorage.setItem(KEY, HASH);
+      document.getElementById('pw-overlay').style.display = 'none';
+    } else {
+      document.getElementById('pw-error').style.display = 'block';
+      document.getElementById('pw-input').value = '';
+      document.getElementById('pw-input').focus();
+    }
+  };
+})();
+</script>
+<!-- END PASSWORD GATE -->
+
 <div class="dash">
 
 <!-- HEADER -->
@@ -503,7 +547,7 @@ tbody tr:nth-child(even):hover { background: #f0f2f5; }
     <div>
         <h1><span class="vc">VetCor</span>&nbsp; PERF Cohort — Transcript Intelligence</h1>
     </div>
-    <div class="header-meta">0 PERF DVMs &bull; ~0 Monthly Visits &bull; 0 Transcripts Analyzed &bull; PERF Cohort &bull; CVO Eyes Only</div>
+    <div class="header-meta">15 PERF DVMs &bull; ~5,943 Monthly Visits &bull; 5,943 Transcripts Analyzed &bull; PERF Cohort &bull; CVO Eyes Only</div>
 </div>
 
 <!-- FILTER BAR -->
@@ -640,23 +684,23 @@ tbody tr:nth-child(even):hover { background: #f0f2f5; }
 
 <div class="footer">
     VetCor Transcript Intelligence Dashboard &mdash; Built from NLP analysis of 15,940 real PERF clinical transcripts<br>
-    Real data: 0 PERF DVMs &bull; 0 transcripts from S3 PERF export &bull; April 2026 &bull; CVO Eyes Only
+    Real data: 15 PERF DVMs &bull; 5,943 transcripts from S3 PERF export &bull; April 2026 &bull; CVO Eyes Only
 </div>
 
 </div>
 
 <script>
 // === EMBEDDED DATA ===
-const DVMS = [];
+const DVMS = [{"n": "Dr. Avery Young", "h": "Animal Care Vet Hospital - Roy", "v": 371, "ye": 0, "lr": 0.275, "lc": 0.137, "lh": 0.363, "lp": "hedger", "dm": 0.569, "dr": 0.116, "dg": 0.081, "dp": "observer", "pm": 0.137, "pr": 0.143, "pd": 0.094, "pp": "passive", "fd": 0.229, "fv": 0.485, "fn": 0.286, "fp": "vague"}, {"n": "Dr. Benigno Mills", "h": "Columbus Central Vet Hospital", "v": 233, "ye": 0, "lr": 0.652, "lc": 0.403, "lh": 0.533, "lp": "hedger", "dm": 0.558, "dr": 0.197, "dg": 0.094, "dp": "recommender", "pm": 0.322, "pr": 0.21, "pd": 0.159, "pp": "proactive", "fd": 0.15, "fv": 0.742, "fn": 0.107, "fp": "vague"}, {"n": "Dr. Candace Pieczynski", "h": "Springfield Animal Hospital", "v": 795, "ye": 0, "lr": 0.823, "lc": 0.424, "lh": 0.567, "lp": "hedger", "dm": 0.335, "dr": 0.106, "dg": 0.011, "dp": "recommender", "pm": 0.575, "pr": 0.417, "pd": 0.226, "pp": "proactive", "fd": 0.328, "fv": 0.608, "fn": 0.064, "fp": "definite"}, {"n": "Dr. Celeste Baker", "h": "Eastside Animal Medical Center", "v": 446, "ye": 0, "lr": 0.774, "lc": 0.545, "lh": 0.258, "lp": "strong", "dm": 0.547, "dr": 0.161, "dg": 0.081, "dp": "recommender", "pm": 0.455, "pr": 0.285, "pd": 0.217, "pp": "proactive", "fd": 0.374, "fv": 0.511, "fn": 0.114, "fp": "definite"}, {"n": "Dr. Emily Dorjath", "h": "Animal Clinic at New Lenox", "v": 404, "ye": 0, "lr": 0.733, "lc": 0.458, "lh": 0.368, "lp": "hedger", "dm": 0.634, "dr": 0.183, "dg": 0.27, "dp": "recommender", "pm": 0.428, "pr": 0.28, "pd": 0.193, "pp": "proactive", "fd": 0.337, "fv": 0.616, "fn": 0.047, "fp": "definite"}, {"n": "Dr. Ilana Yablonovich", "h": "Cresskill Animal Hospital", "v": 254, "ye": 0, "lr": 0.787, "lc": 0.441, "lh": 0.59, "lp": "hedger", "dm": 0.61, "dr": 0.244, "dg": 0.02, "dp": "recommender", "pm": 0.634, "pr": 0.343, "pd": 0.201, "pp": "proactive", "fd": 0.236, "fv": 0.717, "fn": 0.047, "fp": "vague"}, {"n": "Dr. Joe Khodari", "h": "Cresskill Animal Hospital", "v": 133, "ye": 0, "lr": 0.677, "lc": 0.398, "lh": 0.444, "lp": "hedger", "dm": 0.436, "dr": 0.128, "dg": 0.015, "dp": "recommender", "pm": 0.797, "pr": 0.429, "pd": 0.195, "pp": "proactive", "fd": 0.173, "fv": 0.744, "fn": 0.083, "fp": "vague"}, {"n": "Dr. Katherine Hodes", "h": "KC Cat Clinic", "v": 167, "ye": 0, "lr": 0.671, "lc": 0.234, "lh": 0.625, "lp": "hedger", "dm": 0.808, "dr": 0.401, "dg": 0.497, "dp": "recommender", "pm": 0.665, "pr": 0.251, "pd": 0.09, "pp": "reactive", "fd": 0.162, "fv": 0.814, "fn": 0.024, "fp": "vague"}, {"n": "Dr. Kimberly Thornton", "h": "Tech Ridge Pet Hospital", "v": 388, "ye": 0, "lr": 0.773, "lc": 0.485, "lh": 0.413, "lp": "hedger", "dm": 0.686, "dr": 0.193, "dg": 0.222, "dp": "recommender", "pm": 0.515, "pr": 0.351, "pd": 0.237, "pp": "proactive", "fd": 0.201, "fv": 0.729, "fn": 0.07, "fp": "vague"}, {"n": "Dr. Madison Butler", "h": "Cat Care of Rochester Hills", "v": 132, "ye": 0, "lr": 0.636, "lc": 0.712, "lh": 0.488, "lp": "hedger", "dm": 0.212, "dr": 0.167, "dg": 0.008, "dp": "recommender", "pm": 0.038, "pr": 0.038, "pd": 0.03, "pp": "passive", "fd": 0.432, "fv": 0.545, "fn": 0.023, "fp": "definite"}, {"n": "Dr. Michelle Palmer", "h": "Animal Care Vet Hospital - Roy", "v": 166, "ye": 0, "lr": 0.434, "lc": 0.295, "lh": 0.264, "lp": "moderate", "dm": 0.422, "dr": 0.157, "dg": 0.012, "dp": "recommender", "pm": 0.259, "pr": 0.163, "pd": 0.157, "pp": "proactive", "fd": 0.265, "fv": 0.548, "fn": 0.187, "fp": "vague"}, {"n": "Dr. Ned Trathan", "h": "Oakdale Veterinary Group", "v": 263, "ye": 0, "lr": 0.768, "lc": 0.46, "lh": 0.208, "lp": "moderate", "dm": 0.278, "dr": 0.057, "dg": 0.114, "dp": "observer", "pm": 0.125, "pr": 0.057, "pd": 0.03, "pp": "passive", "fd": 0.468, "fv": 0.441, "fn": 0.091, "fp": "definite"}, {"n": "Dr. Rachael Swallow", "h": "Animal Medical Center of McKinney", "v": 966, "ye": 0, "lr": 0.734, "lc": 0.503, "lh": 0.431, "lp": "hedger", "dm": 0.371, "dr": 0.099, "dg": 0.034, "dp": "recommender", "pm": 0.729, "pr": 0.423, "pd": 0.283, "pp": "proactive", "fd": 0.227, "fv": 0.693, "fn": 0.08, "fp": "vague"}, {"n": "Dr. Teresa Taylor", "h": "Cat Care of Rochester Hills", "v": 565, "ye": 0, "lr": 0.83, "lc": 0.655, "lh": 0.52, "lp": "hedger", "dm": 0.448, "dr": 0.158, "dg": 0.122, "dp": "recommender", "pm": 0.205, "pr": 0.126, "pd": 0.071, "pp": "proactive", "fd": 0.32, "fv": 0.658, "fn": 0.021, "fp": "definite"}, {"n": "Dr. Wynn Palmer", "h": "Animal Care Vet Hospital - Roy", "v": 660, "ye": 0, "lr": 0.345, "lc": 0.145, "lh": 0.57, "lp": "hedger", "dm": 0.464, "dr": 0.192, "dg": 0.044, "dp": "recommender", "pm": 0.159, "pr": 0.126, "pd": 0.048, "pp": "proactive", "fd": 0.182, "fv": 0.621, "fn": 0.197, "fp": "vague"}];
 const REGIONS = {};
-const LAB_CAUSES = {"not_recommended": 100.0, "hedging_language": 0.0, "recommended_not_completed": 0.0, "recommended_and_completed": 0.0};
-const DENTAL_CAUSES = {"not_mentioned": 100.0, "mentioned_not_recommended": 0.0, "recommended": 0.0, "graded": 0.0};
-const PREV_CAUSES = {"not_discussed": 100.0, "discussed_not_recommended": 0.0, "recommended_not_dispensed": 0.0, "dispensed": 0.0};
-const FWD_CAUSES = {"no_follow_up": 0.0, "vague_follow_up": 0.0, "specific_date": 0.0};
-const LAB_PROFILES = {};
-const DENTAL_PROFILES = {};
-const PREV_PROFILES = {};
-const FWD_PROFILES = {};
+const LAB_CAUSES = {"not_recommended": 32.4, "hedging_language": 30.6, "recommended_not_completed": 25.2, "recommended_and_completed": 42.4};
+const DENTAL_CAUSES = {"not_mentioned": 52.7, "mentioned_not_recommended": 31.9, "recommended": 15.4, "graded": 9.2};
+const PREV_CAUSES = {"not_discussed": 57.2, "discussed_not_recommended": 15.8, "recommended_not_dispensed": 10.3, "dispensed": 16.7};
+const FWD_CAUSES = {"no_follow_up": 9.8, "vague_follow_up": 63.0, "specific_date": 27.2};
+const LAB_PROFILES = {"hedger": 12, "strong": 1, "moderate": 2};
+const DENTAL_PROFILES = {"observer": 2, "recommender": 13};
+const PREV_PROFILES = {"passive": 3, "proactive": 11, "reactive": 1};
+const FWD_PROFILES = {"vague": 9, "definite": 6};
 
 // Tableau 10 palette
 const T10 = ['#4E79A7','#F28E2B','#E15759','#76B7B2','#59A14F','#EDC948','#B07AA1','#FF9DA7','#9C755F','#BAB0AC'];
@@ -694,15 +738,12 @@ function init() {
 
 function populateFilters() {
     // Regions removed — no region filter needed
-});
 }
 
 function applyFilters() {
     filtered = [...DVMS];
     Object.values(charts).forEach(c => c.destroy());
     charts = {};
-    renderOverview(); renderLab(); renderDental(); renderPrevention(); renderFwd(); renderRoster();
-};
     renderOverview(); renderLab(); renderDental(); renderPrevention(); renderFwd(); renderRoster();
 }
 
