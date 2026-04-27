@@ -1,17 +1,7533 @@
 {
-  "111-1358-joekhodari": [],
-  "111-141-ilanayablonovich": [],
-  "189-1625-teresataylor": [],
-  "189-1626-madisonbutler": [],
-  "225-1498-michellepalmer": [],
-  "225-321-wynnpalmer": [],
-  "225-689-averyyoung": [],
-  "249-1696-benignomills": [],
-  "289-416-katherinehodes": [],
-  "358-585-emilydorjath": [],
-  "547-989-candacepieczynski": [],
-  "550-995-rachaelswallow": [],
-  "581-1045-kimberlythornton": [],
-  "648-1210-celestebaker": [],
-  "785-1582-nedtrathan": []
+  "111-1358-joekhodari": [
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    }
+  ],
+  "111-141-ilanayablonovich": [
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    }
+  ],
+  "189-1625-teresataylor": [
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    }
+  ],
+  "189-1626-madisonbutler": [
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    }
+  ],
+  "225-1498-michellepalmer": [
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    }
+  ],
+  "225-321-wynnpalmer": [
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    }
+  ],
+  "225-689-averyyoung": [
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    }
+  ],
+  "249-1696-benignomills": [
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    }
+  ],
+  "289-416-katherinehodes": [
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    }
+  ],
+  "358-585-emilydorjath": [
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    }
+  ],
+  "547-989-candacepieczynski": [
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    }
+  ],
+  "550-995-rachaelswallow": [
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    }
+  ],
+  "581-1045-kimberlythornton": [
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    }
+  ],
+  "648-1210-celestebaker": [
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "none"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": true
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": true,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    }
+  ],
+  "785-1582-nedtrathan": [
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": true
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": true
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": true,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    },
+    {
+      "lab": {
+        "recommended": false,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": true,
+        "recommended": true,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague",
+        "details": "Next appointment referenced as 12-week mark or 11 weeks depending on owner's travel schedule, but specific date not booked; Doctor Ned suggested visit may be optional if dog not limping"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": true,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "vague"
+      }
+    },
+    {
+      "lab": {
+        "recommended": true,
+        "completed": false,
+        "hedging": false
+      },
+      "dental": {
+        "mentioned": false,
+        "recommended": false,
+        "graded": false
+      },
+      "prevention": {
+        "discussed": false,
+        "recommended": false,
+        "dispensed": false
+      },
+      "forward_booking": {
+        "type": "definite"
+      }
+    }
+  ]
 }
