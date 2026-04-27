@@ -13,6 +13,7 @@ Usage:
 
 import argparse
 import asyncio
+import datetime
 import io
 import json
 import logging
@@ -152,21 +153,95 @@ def load_dvm_transcripts(dvm_dirs: dict[str, Path]) -> dict[str, list[dict]]:
     return result
 
 
+def _extract_year_from_created(created_val) -> int | None:
+    """
+    Parse the year from whatever format the 'created' metadata field uses.
+
+    Handles:
+      - ISO 8601:   "2026-04-21"  /  "2026-04-21T10:30:00Z"
+      - US format:  "04/21/2026"  /  "4-21-2026"
+      - Long form:  "April 21, 2026"
+      - Unix ts:    1745280000  (int or numeric string, 9-12 digits)
+      - Missing:    returns None
+    """
+    if created_val is None:
+        return None
+
+    s = str(created_val).strip()
+    if not s:
+        return None
+
+    # Unix timestamp — 9 to 12 digit numeric string
+    if re.match(r"^\d{9,12}$", s):
+        try:
+            return datetime.datetime.utcfromtimestamp(int(s)).year
+        except (ValueError, OSError):
+            pass
+
+    # ISO / SQL: starts with 4-digit year  e.g. "2026-04-21" or "2026/04/21"
+    m = re.match(r"^(\d{4})[-/]", s)
+    if m:
+        return int(m.group(1))
+
+    # US or mixed: find any 4-digit year in range 2000-2100
+    m = re.search(r"\b(20\d{2})\b", s)
+    if m:
+        return int(m.group(1))
+
+    return None
+
+
 def filter_by_year(all_transcripts: dict[str, list[dict]]) -> dict[str, list[dict]]:
-    """Filter transcripts to only those created in FILTER_YEAR."""
+    """
+    Filter transcripts to only those created in FILTER_YEAR.
+
+    Robust to ISO, US (MM/DD/YYYY), long-form, and Unix timestamp formats.
+    Transcripts with no parseable date are KEPT (with a warning) so they
+    are not silently dropped.
+    """
     if not getattr(config, "FILTER_YEAR", 0):
         return all_transcripts
 
-    year_str = str(config.FILTER_YEAR)
+    target_year = int(config.FILTER_YEAR)
+
     filtered = {}
+    total_kept = total_dropped_mismatch = total_dropped_no_date = 0
+
     for dvm_key, txs in all_transcripts.items():
-        kept = [
-            tx for tx in txs
-            if tx.get("metadata", {}).get("created", "").startswith(year_str)
-        ]
+        kept = []
+        dropped_mismatch = 0
+        no_date = 0
+
+        for tx in txs:
+            created = tx.get("metadata", {}).get("created")
+            yr = _extract_year_from_created(created)
+
+            if yr is None:
+                # No parseable date — include rather than silently discard
+                kept.append(tx)
+                no_date += 1
+            elif yr == target_year:
+                kept.append(tx)
+            else:
+                dropped_mismatch += 1
+
         if kept:
             filtered[dvm_key] = kept
-        log.info(f"  {dvm_key}: {len(kept)}/{len(txs)} transcripts from {year_str}")
+
+        total_kept += len(kept)
+        total_dropped_mismatch += dropped_mismatch
+        total_dropped_no_date += no_date
+
+        log.info(
+            f"  {dvm_key}: {len(kept)}/{len(txs)} kept "
+            f"({dropped_mismatch} wrong year, {no_date} no parseable date — included)"
+        )
+
+    log.info(
+        f"  Year filter summary: {total_kept} kept, "
+        f"{total_dropped_mismatch} dropped (wrong year), "
+        f"{total_dropped_no_date} had unparseable dates (kept)"
+    )
     return filtered
 
 
@@ -648,7 +723,7 @@ def main():
 
     # Filter out DVMs with too few transcripts
     all_transcripts = {k: v for k, v in all_transcripts.items() if len(v) >= 5}
-    log.info(f"  {len(all_transcripts)} DVMs with ≥5 valid transcripts")
+    log.info(f"  {len(all_transcripts)} DVMs with \u22655 valid transcripts")
 
     # Step 3: Sample
     log.info("\n[3/5] Sampling transcripts...")
@@ -682,7 +757,7 @@ def main():
 
     # Safety check: don't overwrite dashboard with empty results
     if not dvms:
-        log.error("  NO DVMs produced results — skipping dashboard update to protect existing data.")
+        log.error("  NO DVMs produced results \u2014 skipping dashboard update to protect existing data.")
         log.error("  Check API key credits and rate limits.")
         sys.exit(1)
 
