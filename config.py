@@ -25,7 +25,7 @@ MODEL             = "claude-haiku-4-5-20251001"    # fast + cheap
 MAX_TOKENS        = 1024                           # response cap per call
 
 # ── Evaluation settings ─────────────────────────────────────────────
-SAMPLE_SIZE       = 0           # transcripts to evaluate per DVM (0 = all)
+SAMPLE_SIZE       = 25          # transcripts to evaluate per DVM (0 = all; 25 keeps cost ~$0.40/run)
 MIN_TRANSCRIPT_LINES = 4       # skip very short transcripts
 MAX_CONCURRENT    = 4           # parallel Haiku calls (lower = fewer 429s, higher = faster)
 FILTER_YEAR       = 2026        # only process transcripts from this year (0 = no filter)
